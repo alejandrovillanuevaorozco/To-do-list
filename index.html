@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/img/icons.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list</title>
+  </head>
+  <body>
+    <header class=" flex items-center justify-center bg-[url(src/img/fondo-header.jpg)] w-full h-70 p-0 m-0">
+      <p class="font-serif text-sky-950 text-6xl text-center  p-0 m-0">DAILY TO-DO LIST</p>
+    </header>
+    <div>
+      <p class="font-serif text-5xl">Daily Tasks:</p>
+      <input type="checkbox">Tarea 1
+      <button class="font-serif bg-sky-950 uppercase text-white-950 text-white font-bold py-2 px-4 fixed bottom-10 right-10 rounded hover:bg-sky-500">Add tasks </button>
+    </div>
+    <div class="flex flex-col w-100 h-80 border border-sky-950 ">
+      <input type="text" placeholder="Title" class="font-serif">
+      <input type="text" placeholder="Description" class="font-serif">
+      <p class="font-serif text-s">Priority</p>
+      <div class="flex flex-row p-2 gap-2">
+        
+        <div>
+          <p>Low</p>
+          <input type="checkbox">
+        </div>
+        <div>
+          <p>Medium</p>
+          <input type="checkbox">
+        </div>
+        <div>
+          <p>High</p>
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
