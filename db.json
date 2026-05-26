@@ -38,6 +38,38 @@
       "priority": "medium",
       "status": false,
       "id": 5
+    },
+    {
+      "title": "Pasear al perro",
+      "description": "En la mañana de hoy pasearé al perro de la casa",
+      "date": "2026-05-26T08:16",
+      "priority": "low",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "Ir de compras",
+      "description": "Iré de compras por la mañana",
+      "date": "2026-05-26T09:18",
+      "priority": "medium",
+      "status": false,
+      "id": 7
+    },
+    {
+      "title": "Desayunar",
+      "description": "Rico desayuno",
+      "date": "2026-05-26T08:14",
+      "priority": "high",
+      "status": false,
+      "id": 8
+    },
+    {
+      "title": "Bañarme",
+      "description": "Es la hora de bañarme",
+      "date": "2026-05-26T10:47",
+      "priority": "high",
+      "status": false,
+      "id": 9
     }
   ]
 }

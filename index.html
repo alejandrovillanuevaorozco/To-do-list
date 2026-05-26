@@ -7,12 +7,14 @@
     <title>To-do-list</title>
   </head>
   <body>
-    <header class=" flex items-center justify-center bg-[url(src/img/fondo-header.jpg)] w-full h-70 p-0 m-0">
+    <header class=" flex items-center justify-center bg-[url(src/img/fondo-header.jpg)] w-full h-40 p-0 m-0">
       <p class="font-serif text-sky-950 text-6xl text-center  p-0 m-0">DAILY TO-DO LIST</p>
     </header>
     <div>
-      <p class="font-serif text-5xl">Daily Tasks:</p>
-      <input type="checkbox">Tarea 1
+      <div class="flex flex-col border-2 border-sky-950 rounded-l m-4 p-4">
+        <p class="font-serif text-3xl">Daily Tasks:</p>
+        <div id="today_tasks"></div>
+      </div>
       <button id="add_task" class="font-serif bg-sky-950 uppercase text-white font-bold py-2 px-4 fixed bottom-10 right-10 rounded hover:bg-sky-500">Add tasks</button>
       <dialog id="task_modal" class="rounded-xl p-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop:bg-black/40">
         <form method="dialog" class="flex flex-col w-120 h-150 border border-sky-950 px-5 py-4 bg-white rounded-xl">
