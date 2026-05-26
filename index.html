@@ -15,13 +15,13 @@
       <input type="checkbox">Tarea 1
       <button id="add_task" class="font-serif bg-sky-950 uppercase text-white font-bold py-2 px-4 fixed bottom-10 right-10 rounded hover:bg-sky-500">Add tasks</button>
       <dialog id="task_modal" class="rounded-xl p-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 backdrop:bg-black/40">
-        <form method="dialog" class="flex flex-col w-400px h-500px border border-sky-950 px-5 py-4 bg-white rounded-xl">
-          <input type="text" placeholder="Title" class="font-serif text-center text-xl my-5 border-b outline-none">
-          <textarea placeholder="Description" rows="4" class="font-serif w-full rounded-lg border border-gray-300 px-4 py-3 resize-none"></textarea>
+        <form method="dialog" class="flex flex-col w-120 h-150 border border-sky-950 px-5 py-4 bg-white rounded-xl">
+          <input id="title_form" type="text" placeholder="Title" class="font-serif text-center text-xl my-5 border-b outline-none">
+          <textarea id="description_form" placeholder="Description" rows="4" class="font-serif w-full rounded-lg border border-gray-300 px-4 py-3 resize-none text-gray-500"></textarea>
           <p class="font-serif text-sm text-center my-5">Fecha y hora</p>
-          <input type="datetime-local" class="font-serif px-4 border rounded-lg py-2">
+          <input id="datatime_form" type="datetime-local" class="font-serif px-4 border rounded-lg py-2">
           <p class="font-serif text-sm text-center my-5">Priority</p>
-          <div class="flex flex-row justify-around">
+          <div id="options_priority_form" class="flex flex-row justify-around">
             <label class="flex items-center gap-2">
               <span>Low</span>
               <input type="radio" name="priority" value="low" class="w-4 h-4">
@@ -35,14 +35,26 @@
               <input type="radio" name="priority" value="high" class="w-4 h-4">
             </label>
           </div>
+          <p class="font-serif text-sm text-center my-5">Status</p>
+          <div id="options_status_form" class="flex flex-row justify-around">
+            <label class="flex items-center gap-2">
+              <span>Pending</span>
+              <input id="pending_status" type="radio" name="status" value=false class="w-4 h-4">
+            </label>
+            <label id="completed_status" class="flex items-center gap-2">
+              <span>Completed</span>
+              <input type="radio" name="status" value=true class="w-4 h-4">
+            </label>
+          </div>
           <div class="flex flex-row justify-between my-10">
             <button value="cancel" class="font-serif bg-sky-950 uppercase text-white py-2 px-4 rounded hover:bg-sky-500">Cancel</button>
-            <button value="default" class="font-serif bg-sky-950 uppercase text-white py-2 px-4 rounded hover:bg-sky-500">Save</button>
+            <button id="btn_save_form" value="default" class="font-serif bg-sky-950 uppercase text-white py-2 px-4 rounded hover:bg-sky-500">Save</button>
           </div>
         </form>
       </dialog>
     </div>
     <script src="src/btn_add_task.js"></script>
+    <script src="src/btn_save.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

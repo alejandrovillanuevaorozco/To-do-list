@@ -1,0 +1,43 @@
+{
+  "tasks": [
+    {
+      "title": "Prueba 1",
+      "description": "asdasdasd",
+      "date": "2026-05-25T14:45",
+      "priority": "high",
+      "status": "true",
+      "id": 1
+    },
+    {
+      "title": "Prueba 2",
+      "description": "Yulianis la muje de mr black",
+      "date": "2026-05-25T15:46",
+      "priority": "medium",
+      "status": "true",
+      "id": 2
+    },
+    {
+      "title": "dasdas",
+      "description": "asdasdasd",
+      "date": "2026-05-25T14:59",
+      "priority": "high",
+      "status": "true",
+      "id": 3
+    },
+    {
+      "title": "afasdf",
+      "description": "asfasf",
+      "date": "2026-05-25T15:00",
+      "status": true,
+      "id": 4
+    },
+    {
+      "title": "sasdasd",
+      "description": "asdasdasd",
+      "date": "2026-05-25T15:00",
+      "priority": "medium",
+      "status": false,
+      "id": 5
+    }
+  ]
+}
